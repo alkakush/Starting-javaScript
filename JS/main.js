@@ -1,30 +1,27 @@
-// object
+// Arrays of object
 
-const person = {
-    firstname: 'Jonh',
-    lastname: 'Deo',
-    age:30,
-    hobbies: ['music', 'movies', 'sports'],
-    address: {
-      street: '50 main st',
-      city: 'Boston',
-      state: 'MA'
-    }
-}
+const todos = [
+ {
+   id: 1,
+   text: 'Take out trash',
+   isCompleted: true 
+},
+{
+    id: 2,
+    text: 'Meeting with boss',
+    isCompleted: true 
+ },
+ {
+    id: 3,
+    text: 'Dentist appt',
+    isCompleted: false 
+ },
+];
 
-console.log(person);
+console.log(todos);
 
-console.log(person.hobbies[2]);
-
-console.log(person.address.city);
-
-const { firstname, lastname, address: { city } } = person;
-
-console.log(firstname);
-console.log(city);
-
-person.email = 'Jonh@gmail.com';
-
-console.log(person);
+console.log(todos[1].text);
 
 
+const todosJSON = JSON.stringify(todos);
+console.log(todosJSON);
