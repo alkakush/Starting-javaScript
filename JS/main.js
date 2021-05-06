@@ -1,24 +1,30 @@
-// Arrays - Variables that hold multiple values
+// object
 
-const numbers = new Array(1, 2, 3, 4, 5); //by using constructor
+const person = {
+    firstname: 'Jonh',
+    lastname: 'Deo',
+    age:30,
+    hobbies: ['music', 'movies', 'sports'],
+    address: {
+      street: '50 main st',
+      city: 'Boston',
+      state: 'MA'
+    }
+}
 
-console.log(numbers);
+console.log(person);
 
-const fruits = ['apples', 'orange', 'mango', 10, true ];
+console.log(person.hobbies[2]);
 
-fruits[3] = 'grapes';
+console.log(person.address.city);
 
-fruits.push(20);
+const { firstname, lastname, address: { city } } = person;
 
-fruits.unshift('strawberries');
+console.log(firstname);
+console.log(city);
 
-console.log(fruits[1]);
+person.email = 'Jonh@gmail.com';
 
-console.log(fruits);
+console.log(person);
 
-fruits.pop();
-
-console.log(Array.isArray(fruits));
-
-console.log(fruits.indexOf('orange'));
 
