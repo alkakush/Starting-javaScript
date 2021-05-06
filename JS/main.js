@@ -1,5 +1,5 @@
-// Arrays of object
-
+// starting  with loop
+/*
 const todos = [
  {
    id: 1,
@@ -17,11 +17,11 @@ const todos = [
     isCompleted: false 
  },
 ];
+*/
 
-console.log(todos);
+// for loop
 
-console.log(todos[1].text);
-
-
-const todosJSON = JSON.stringify(todos);
-console.log(todosJSON);
+for(let i = 0; i <= 10; i++){
+    console.log(i);
+   //   console.log('For Loop Number: ');
+}
