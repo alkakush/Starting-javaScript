@@ -18,7 +18,7 @@ const todos = [
  },
 ];
 
-
+/*
 // for loop
 
 for(let i = 0; i < todos.length; i++){
@@ -31,6 +31,33 @@ for(let todo of todos){
    // console.log(todo.id);
 
 }
+*/
+
+
+// forEach
+ 
+ todos.forEach(function(todo){
+  console.log(todo.isCompleted);
+ });
+
+ //map
+const todoText = todos.map(function(todo){
+   return todo.text;
+});
+
+console.log(todoText);
+
+//filter
+const todoCompleted = todos.filter(function(todo){
+   return todo.isCompleted === true;
+});
+
+console.log(todoCompleted);
+
+
+
+
+
 
 
 //  while loop
