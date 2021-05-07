@@ -97,7 +97,7 @@ if(z === 20 ) {
 }
 */
 
-
+/*
 //  else if statement
  
 
@@ -120,3 +120,22 @@ if(y === 10 ) {
 } else{
    console.log('y is less then 10');
 }
+
+*/
+
+
+//  nested if statement
+
+const x = 5;
+const y = 9;
+
+if(x > 5 || y > 10){
+   console.log('x is more then 5');
+   console.log('y is more then 10');
+} else{
+   console.log('x is less then 5');
+   console.log('y is less then 10');
+}
+
+
+
