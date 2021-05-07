@@ -123,7 +123,7 @@ if(y === 10 ) {
 
 */
 
-
+/*
 //  nested if statement
 
 const x = 5;
@@ -136,6 +136,30 @@ if(x > 5 || y > 10){
    console.log('x is less then 5');
    console.log('y is less then 10');
 }
+*/
+
+
+// ============ ternary Operator ===================
+
+ const x = 11;
+
+ const color = x > 10 ? 'red' : 'blue';
+ console.log(color);
 
 
 
+ const y = 11;
+
+ const subject = y > 10 ? 'java' : 'javascript';
+
+ switch(subject){
+    case 'java':
+      console.log('subject is java');
+      break;
+    case 'javascript':
+       console.log('subject is javascript');
+      break;
+    default:
+       console.log('subject is NOT java or javascript');  
+ }
+ 
