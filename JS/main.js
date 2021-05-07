@@ -69,7 +69,7 @@ while(i < 10){
 }
 */
 
-
+/*
 //======= conditional statements ================
 
 //  if , if else statement
@@ -94,4 +94,29 @@ const z = '20';
 
 if(z === 20 ) {        
    console.log('z is 20');  // will not print because === contains data type
+}
+*/
+
+
+//  else if statement
+ 
+
+const x = 20;
+
+if(x === 10 ) {
+   console.log('x is 10');
+} else if(x > 10){
+   console.log('x is grater then 10');
+} else{
+   console.log('x is less then 10');
+}
+
+const y = 5;
+
+if(y === 10 ) {
+   console.log('y is 10');
+} else if(y > 10){
+   console.log('y is grater then 10');
+} else{
+   console.log('y is less then 10');
 }
