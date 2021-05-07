@@ -1,3 +1,4 @@
+/*
 // starting  with loop
 
 const todos = [
@@ -18,6 +19,8 @@ const todos = [
  },
 ];
 
+*/
+
 /*
 // for loop
 
@@ -33,7 +36,7 @@ for(let todo of todos){
 }
 */
 
-
+/*
 // forEach
  
  todos.forEach(function(todo){
@@ -53,11 +56,7 @@ const todoCompleted = todos.filter(function(todo){
 });
 
 console.log(todoCompleted);
-
-
-
-
-
+*/
 
 
 //  while loop
@@ -69,3 +68,30 @@ while(i < 10){
    i++;
 }
 */
+
+
+//======= conditional statements ================
+
+//  if , if else statement
+ 
+
+const x = 20;
+
+if(x == 20 ) {
+   console.log('x is 20');
+}
+
+const y = '20';
+
+if(y == 10 ) {
+   console.log('y is 20');
+}else{
+   console.log('y is NOT 20');
+}
+
+
+const z = '20';
+
+if(z === 20 ) {        
+   console.log('z is 20');  // will not print because === contains data type
+}
