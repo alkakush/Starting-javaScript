@@ -230,6 +230,7 @@ console.log(person1.getBirthYear());
 console.log(person2.getFullName());
 */
 
+/*
 //=== proto type ==
 
 // Constructor function
@@ -253,3 +254,36 @@ results.prototype.getFullinfo = function() {
 
  console.log(subject1);
  console.log(subject2);
+ */
+
+ // ================== OOPs Class =============================
+
+
+// Class
+
+class Person {
+   constructor(firstName, lastName, dob){
+      this.firstName = firstName;
+      this.lastName = lastName;
+      this.dob = new Date(dob);
+   }
+
+   getBirthYear() {
+      return this.dob.getFullYear();
+   }
+
+   getFullName() {
+      return `${this.firstName} ${this.lastName}`; 
+   }
+
+}
+
+// Instantiate object
+
+const person1 = new Person('John', 'Deo', '4-3-1980');
+const person2 = new Person('Mary', 'Smith', '4-10-1990');
+
+console.log(person1);
+console.log(person1.lastName);
+
+console.log(person2.getFullName());
