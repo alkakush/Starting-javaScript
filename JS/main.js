@@ -138,7 +138,7 @@ if(x > 5 || y > 10){
 }
 */
 
-
+/*
 // ============ ternary Operator ===================
 
  const x = 11;
@@ -162,4 +162,19 @@ if(x > 5 || y > 10){
     default:
        console.log('subject is NOT java or javascript');  
  }
- 
+ */
+
+
+ // functions
+
+ function addNums(num1, num2){
+    return num1 + num2;
+ }
+ console.log(addNums(5, 4));
+
+
+ function addNum(Num1 = 1, Num2 = 2){ 
+   console.log(Num1 + Num2);
+}
+addNum();
+addNum(5, 7);
