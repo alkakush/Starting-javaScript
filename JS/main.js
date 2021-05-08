@@ -197,7 +197,7 @@ console.log(addNum(6, 6));
 
 
 // ========================== OOPs concepts ================
-
+/*
 // Constructor function
 
 function Person(firstName, lastName, dob){
@@ -228,8 +228,8 @@ console.log(person2.dob.getFullYear());
 console.log(person1.getBirthYear());
 
 console.log(person2.getFullName());
+*/
 
-/*
 //=== proto type ==
 
 // Constructor function
@@ -242,6 +242,9 @@ function results(subject, minMark , maxMark) {
 results.prototype.getMaximumNumber = function() {
    return this.maxMark.getMaximumNumber();
 }
+results.prototype.getFullinfo = function() {
+   return `${this.subject} ${this.minMark} ${this.maxMark}`;
+}
 
 
 // Instantiate object
@@ -249,4 +252,4 @@ results.prototype.getMaximumNumber = function() {
  const subject2 = new results('javascript', '15', '40' );
 
  console.log(subject1);
-*/
+ console.log(subject2);
