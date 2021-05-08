@@ -295,14 +295,21 @@ console.log(person2.getFullName());
 //====================== Use DOM js  =====================
 
 // single element
-
+/*
  console.log(document.getElementById('my-form'));
  console.log(document.querySelector('.container'));
-
+*/
 /*
  //same as above
 const form = document.getElementById('my-form');
 console.log(form);
 */
+
+
+// multiple element
+
+console.log(document.querySelector('.item'));
+console.log(document.getElementsByClassName('.item'));
+console.log(document.getElementsByTagName('li'));
 
 
