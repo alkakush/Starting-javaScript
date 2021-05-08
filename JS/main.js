@@ -165,8 +165,8 @@ if(x > 5 || y > 10){
  */
 
 
- // functions
-
+ // ================= functions ============================
+/*
  function addNums(num1, num2){
     return num1 + num2;
  }
@@ -178,3 +178,17 @@ if(x > 5 || y > 10){
 }
 addNum();
 addNum(5, 7);
+*/
+
+// arrow function
+
+const addNums = (num1 = 1, num2 = 2 ) =>{
+   return num1 + num2;
+}
+console.log(addNums(5,5));
+
+
+
+const addNum = (Num1 = 1, Num2 = 2 ) => Num1 + Num2;
+
+console.log(addNum(6, 6));
