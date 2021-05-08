@@ -256,6 +256,7 @@ results.prototype.getFullinfo = function() {
  console.log(subject2);
  */
 
+ /*
  // ================== OOPs Class =============================
 
 
@@ -287,3 +288,21 @@ console.log(person1);
 console.log(person1.lastName);
 
 console.log(person2.getFullName());
+
+*/
+
+
+//====================== Use DOM js  =====================
+
+// single element
+
+ console.log(document.getElementById('my-form'));
+ console.log(document.querySelector('.container'));
+
+/*
+ //same as above
+const form = document.getElementById('my-form');
+console.log(form);
+*/
+
+
