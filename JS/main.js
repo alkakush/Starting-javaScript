@@ -180,6 +180,7 @@ addNum();
 addNum(5, 7);
 */
 
+/*
 // arrow function
 
 const addNums = (num1 = 1, num2 = 2 ) =>{
@@ -192,3 +193,60 @@ console.log(addNums(5,5));
 const addNum = (Num1 = 1, Num2 = 2 ) => Num1 + Num2;
 
 console.log(addNum(6, 6));
+*/
+
+
+// ========================== OOPs concepts ================
+
+// Constructor function
+
+function Person(firstName, lastName, dob){
+   this.firstName = firstName;
+   this.lastName = lastName;
+   this.dob = new Date(dob);
+
+   this.getBirthYear = function() {
+      return this.dob.getFullYear();
+   }
+
+   this.getFullName = function() {
+      return `${this.firstName} ${this.lastName}`; 
+   }
+}
+
+// Instantiate object
+
+const person1 = new Person('John', 'Deo', '4-3-1980');
+const person2 = new Person('Mary', 'Smith', '4-10-1990');
+
+console.log(person1);
+console.log(person1.lastName);
+
+console.log(person2.dob);
+console.log(person2.dob.getFullYear());
+
+console.log(person1.getBirthYear());
+
+console.log(person2.getFullName());
+
+/*
+//=== proto type ==
+
+// Constructor function
+function results(subject, minMark , maxMark) {
+   this.subject = subject;
+   this.minMark = minMark;
+   this.maxMark = maxMark;
+}
+
+results.prototype.getMaximumNumber = function() {
+   return this.maxMark.getMaximumNumber();
+}
+
+
+// Instantiate object
+ const subject1 = new results('java', '20', '40' );
+ const subject2 = new results('javascript', '15', '40' );
+
+ console.log(subject1);
+*/
