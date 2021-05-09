@@ -317,7 +317,7 @@ console.log(document.getElementsByTagName('li'));
 // manipulate Dom
 /*
 const items = document.querySelectorAll('.item');
-items.forEach((item) => console.log(item));  */
+items.forEach((item) => console.log(item));  
 
 const ul = document.querySelector('.items');
 
@@ -326,6 +326,16 @@ const ul = document.querySelector('.items');
 ul.firstElementChild.textContent = 'Hello';
 ul.children[1].innerText = 'Brad';
 ul.lastElementChild.innerHTML = '<h1>hello</h1>';
+*/
+
 
 const btn = document.querySelector('.btn');
 btn.style.background = 'red';
+
+btn.addEventListener('click', (e) => {
+   e.preventDefault();
+   console.log('click');
+   console.log(e.target);
+   console.log(e.target.className);
+
+});
