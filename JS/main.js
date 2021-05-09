@@ -328,7 +328,7 @@ ul.children[1].innerText = 'Brad';
 ul.lastElementChild.innerHTML = '<h1>hello</h1>';
 */
 
-
+/*
 const btn = document.querySelector('.btn');
 btn.style.background = 'red';
 // eventlistener mouseover, click, mousout
@@ -341,3 +341,20 @@ btn.addEventListener('mouseover', (e) => {
    document.querySelector('#my-form').style.background = '#ccc';
    document.querySelector('body').classList.add('bg-dark');
 });
+
+*/
+
+// ========================================= Form Scripting ====================================
+
+const myForm = document.querySelector('#my-form');
+const nameInput = document.querySelector('#name');
+const emailInput = document.querySelector('#email');
+const msg = document.querySelector('.msg');
+const userList = document.querySelector('#users');
+
+myForm.addEventListener('submit', onSubmit);
+function onSubmit(e) {
+   e.preventDefault();
+
+   console.log(nameInput.value);
+}
