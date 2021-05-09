@@ -307,9 +307,25 @@ console.log(form);
 
 
 // multiple element
-
+/*
 console.log(document.querySelector('.item'));
 console.log(document.getElementsByClassName('.item'));
 console.log(document.getElementsByTagName('li'));
 
+*/
 
+// manipulate Dom
+/*
+const items = document.querySelectorAll('.item');
+items.forEach((item) => console.log(item));  */
+
+const ul = document.querySelector('.items');
+
+// ul.remove();
+// ul.lastElementChild.remove();
+ul.firstElementChild.textContent = 'Hello';
+ul.children[1].innerText = 'Brad';
+ul.lastElementChild.innerHTML = '<h1>hello</h1>';
+
+const btn = document.querySelector('.btn');
+btn.style.background = 'red';
